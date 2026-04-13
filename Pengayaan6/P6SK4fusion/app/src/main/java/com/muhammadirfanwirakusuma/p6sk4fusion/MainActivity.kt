@@ -1,47 +1,64 @@
 package com.muhammadirfanwirakusuma.p6sk4fusion
 
+import android.content.Context
+import android.media.AudioManager
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.muhammadirfanwirakusuma.p6sk4fusion.ui.theme.P6SK4fusionTheme
+import android.widget.SeekBar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
+    private lateinit var audioManager: AudioManager
+    
+    private lateinit var globalVolumeSeekBar: SeekBar
+    private lateinit var bottomNav: BottomNavigationView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            P6SK4fusionTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+        setContentView(R.layout.activity_main)
+
+        globalVolumeSeekBar = findViewById(R.id.globalVolumeSeekBar)
+        bottomNav = findViewById(R.id.bottom_navigation)
+
+        // Setup Audio Manager for Global Volume
+        audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        val maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
+        val currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC)
+
+        globalVolumeSeekBar.max = maxVolume
+        globalVolumeSeekBar.progress = currentVolume
+
+        globalVolumeSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                if (fromUser) {
+                    audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress, 0)
                 }
             }
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+        })
+
+        // Setup Bottom Nav
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_player -> loadFragment(PlayerFragment())
+                R.id.nav_sound -> loadFragment(SoundFragment())
+                R.id.nav_recorder -> loadFragment(RecorderFragment())
+                else -> false
+            }
+        }
+
+        // Load Default Fragment
+        if (savedInstanceState == null) {
+            bottomNav.selectedItemId = R.id.nav_player
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    P6SK4fusionTheme {
-        Greeting("Android")
+    private fun loadFragment(fragment: Fragment): Boolean {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
+        return true
     }
 }

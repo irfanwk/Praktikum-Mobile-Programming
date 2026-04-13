@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound FX System (SoundPool)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnShoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tembakan"
+        android:layout_marginBottom="8dp"/>
+
+    <Button android:id="@+id/btnBoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ledakan"
+        android:layout_marginBottom="8dp"/>
+
+    <Button android:id="@+id/btnCoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Koin"
+        android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnSimultan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Demokan Simultan"/>
+
+    <TextView
+        android:id="@+id/tvErrorTextSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:text=""/>
+</LinearLayout>
