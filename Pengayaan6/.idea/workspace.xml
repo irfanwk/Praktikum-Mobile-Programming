@@ -5,118 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e123cb5a-c447-4718-ae05-8302269991e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/Pengayaan 6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/caches/deviceStreaming.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/androidTest/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/PlayerActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/layout/activity_player.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/raw/apple.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/app/src/test/java/com/muhammadirfanwirakusuma/p6sk1pemutarmusiksederhana/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK1PemutarMusikSederhana/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/AndroidProjectSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/appInsightsSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/deploymentTargetSelector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/androidTest/java/com/muhammadirfanwirakusuma/p6sk2soundfx/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/java/com/muhammadirfanwirakusuma/p6sk2soundfx/GameSoundActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/java/com/muhammadirfanwirakusuma/p6sk2soundfx/ui/theme/Color.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/java/com/muhammadirfanwirakusuma/p6sk2soundfx/ui/theme/Theme.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/java/com/muhammadirfanwirakusuma/p6sk2soundfx/ui/theme/Type.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/layout/activity_game_sound.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-anydpi/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/raw/boom.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/raw/coin.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/raw/shoot.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/app/src/test/java/com/muhammadirfanwirakusuma/p6sk2soundfx/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradle/gradle-daemon-jvm.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Pengayaan 6/P6SK2SoundFX/test.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,9 +42,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-9.3.1-bin/23ovyewtku6u96viwx3xl3oks/gradle-9.3.1" javaHome="$APPLICATION_HOME_DIR$/jbr" gradleVersion="9.3.1" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3CIKn3bUFw8AJqL0rDYR03QguSQ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -171,6 +60,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
