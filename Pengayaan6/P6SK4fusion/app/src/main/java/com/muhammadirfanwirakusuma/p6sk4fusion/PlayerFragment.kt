@@ -39,7 +39,6 @@ class PlayerFragment : Fragment() {
                     updateSeekBar()
                 }
             } ?: run {
-                // If it was failed to create previously due to placeholder
                 tvErrorText.text = "MediaPlayer kosong. Pastikan res/raw/song.mp3 valid."
             }
         }
@@ -77,7 +76,7 @@ class PlayerFragment : Fragment() {
                 setOnCompletionListener { resetPlayer() }
             }
             if (mediaPlayer == null) {
-                tvErrorText.text = "Gagal memuat song.mp3 (Mungkin file masih berupa text placeholder)"
+                tvErrorText.text = "Gagal memuat lagu"
             }
         } catch (e: Exception) {
             tvErrorText.text = "Exception: ${e.message}"
