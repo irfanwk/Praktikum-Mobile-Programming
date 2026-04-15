@@ -22,8 +22,8 @@ class PlayerActivity : Activity() {
         tvCurrent = findViewById(R.id.tvCurrent)
         tvDurasi = findViewById(R.id.tvDurasi)
 
-        // Inisialisasi MediaPlayer dari resource res/raw/apple.mp3
-        mediaPlayer = MediaPlayer.create(this, R.raw.apple).apply {
+        // Inisialisasi MediaPlayer dari resource res/raw/annumfree.mp3
+        mediaPlayer = MediaPlayer.create(this, R.raw.annumfree).apply {
             setOnPreparedListener {
                 seekBar.max = duration
                 tvDurasi.text = formatWaktu(duration)

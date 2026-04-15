@@ -9,7 +9,7 @@
     <TextView android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pelafalan Kata: Apple"
+        android:text="Song Title: Annum - Free"
         android:textSize="20sp" 
         android:textStyle="bold"
         android:gravity="center" 
