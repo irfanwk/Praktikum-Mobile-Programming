@@ -1,0 +1,173 @@
+A. Deskripsi Kasus
+Sebuah startup edukasi ingin mengembangkan aplikasi belajar bahasa untuk anak-
+anak. Salah satu fitur utamanya adalah pemutaran file audio pelafalan kata dalam bahasa
+Inggris yang disimpan di dalam paket aplikasi (res/raw/). Aplikasi harus mampu memutar,
+MODUL PRAKTIKUM
+Pemrograman Perangkat Bergerak
+Universitas Pertamina
+Prodi Ilmu Komputer
+Pertemuan 6 - Bekerja dengan Multimedia | Halaman 4 dari 14
+menjeda, menghentikan, serta menampilkan durasi dan posisi pemutaran secara real-time
+menggunakan SeekBar.
+B. Analisis Kebutuhan
+• File audio disimpan di res/raw/ (tidak memerlukan akses storage eksternal).
+• Pemutaran dikendalikan dengan tombol Play, Pause, dan Stop.
+• SeekBar menampilkan dan mengontrol posisi pemutaran secara interaktif.
+• Aplikasi harus mengosongkan resource (release) saat Activity dihancurkan.
+C. Implementasi - Layout (activity_player.xml)
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+<TextView android:id="@+id/tvJudul"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Pelafalan Kata: Apple"
+android:textSize="18sp" android:textStyle="bold"
+android:gravity="center" android:layout_marginBottom="16dp"/>
+<SeekBar android:id="@+id/seekBar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="8dp"/>
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center" android:layout_marginBottom="16dp">
+<TextView android:id="@+id/tvCurrent"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:text="0:00"/>
+<TextView android:layout_width="0dp" android:layout_weight="1"
+android:layout_height="wrap_content" android:gravity="right"
+android:id="@+id/tvDurasi" android:text="0:00"/>
+</LinearLayout>
+<LinearLayout android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:orientation="horizontal"
+android:gravity="center" android:layout_gravity="center">
+<Button android:id="@+id/btnPlay" android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:text="Play"
+android:layout_marginEnd="8dp"/>
+<Button android:id="@+id/btnPause" android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:text="Pause"
+android:layout_marginEnd="8dp"/>
+<Button android:id="@+id/btnStop" android:layout_width="wrap_content"
+android:layout_height="wrap_content" android:text="Stop"/>
+</LinearLayout>
+MODUL PRAKTIKUM
+Pemrograman Perangkat Bergerak
+Universitas Pertamina
+Prodi Ilmu Komputer
+Pertemuan 6 - Bekerja dengan Multimedia | Halaman 5 dari 14
+</LinearLayout>
+D. Implementasi — Activity (PlayerActivity.kt)
+package com.example.audioplayer
+import android.media.MediaPlayer
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+class PlayerActivity : AppCompatActivity() {
+private var mediaPlayer: MediaPlayer? = null
+private val handler = Handler(Looper.getMainLooper())
+private lateinit var seekBar: SeekBar
+private lateinit var tvCurrent: TextView
+private lateinit var tvDurasi: TextView
+override fun onCreate(savedInstanceState: Bundle?) {
+super.onCreate(savedInstanceState)
+setContentView(R.layout.activity_player)
+seekBar = findViewById(R.id.seekBar)
+tvCurrent = findViewById(R.id.tvCurrent)
+tvDurasi = findViewById(R.id.tvDurasi)
+// Inisialisasi MediaPlayer dari resource res/raw/apple.mp3
+mediaPlayer = MediaPlayer.create(this, R.raw.apple).apply {
+setOnPreparedListener {
+seekBar.max = duration
+tvDurasi.text = formatWaktu(duration)
+}
+setOnCompletionListener { resetPlayer() }
+}
+// Tombol Play
+findViewById<Button>(R.id.btnPlay).setOnClickListener {
+mediaPlayer?.let { mp ->
+if (!mp.isPlaying) {
+mp.start()
+updateSeekBar() // Mulai update seekbar
+}
+}
+}
+// Tombol Pause
+findViewById<Button>(R.id.btnPause).setOnClickListener {
+mediaPlayer?.takeIf { it.isPlaying }?.pause()
+}
+// Tombol Stop
+findViewById<Button>(R.id.btnStop).setOnClickListener { resetPlayer() }
+// SeekBar dragged by user
+seekBar.setOnSeekBarChangeListener(object :
+SeekBar.OnSeekBarChangeListener {
+MODUL PRAKTIKUM
+Pemrograman Perangkat Bergerak
+Universitas Pertamina
+Prodi Ilmu Komputer
+Pertemuan 6 - Bekerja dengan Multimedia | Halaman 6 dari 14
+override fun onProgressChanged(sb: SeekBar, progress: Int, fromUser:
+Boolean) {
+if (fromUser) {
+mediaPlayer?.seekTo(progress)
+tvCurrent.text = formatWaktu(progress)
+}
+}
+override fun onStartTrackingTouch(sb: SeekBar) {}
+override fun onStopTrackingTouch(sb: SeekBar) {}
+})
+}
+// Perbarui posisi SeekBar setiap 500ms
+private fun updateSeekBar() {
+handler.postDelayed({
+mediaPlayer?.let { mp ->
+if (mp.isPlaying) {
+seekBar.progress = mp.currentPosition
+tvCurrent.text = formatWaktu(mp.currentPosition)
+updateSeekBar() // Rekursif
+}
+}
+}, 500)
+}
+// Reset ke posisi awal
+private fun resetPlayer() {
+mediaPlayer?.apply { if (isPlaying) stop(); reset() }
+handler.removeCallbacksAndMessages(null)
+seekBar.progress = 0
+tvCurrent.text = "0:00"
+}
+// Konversi ms ke format m:ss
+private fun formatWaktu(ms: Int): String {
+val detik = (ms / 1000) % 60
+val menit = ms / 60000
+return "%d:%02d".format(menit, detik)
+}
+// Bebaskan resource saat Activity dihancurkan
+override fun onDestroy() {
+super.onDestroy()
+handler.removeCallbacksAndMessages(null)
+mediaPlayer?.release()
+mediaPlayer = null
+}
+}
+E. Penjelasan Kode
+Kode di atas mengimplementasikan pemutar musik sederhana dengan beberapa poin penting:
+• MediaPlayer.create() digunakan karena file audio tersedia secara lokal di res/raw/,
+sehingga tidak perlu memanggil prepare() secara manual.
+• Handler.postDelayed() dengan rekursi digunakan untuk memperbarui posisi
+SeekBar setiap 500 milidetik tanpa memblokir thread utama.
+• Metode release() dipanggil di onDestroy() untuk memastikan tidak ada memory
+leak akibat resource audio yang tidak dilepaskan.
+MODUL PRAKTIKUM
+Pemrograman Perangkat Bergerak
+Universitas Pertamina
+Prodi Ilmu Komputer
+Pertemuan 6 - Bekerja dengan Multimedia | Halaman 7 dari 14
+• Tipe data nullable (MediaPlayer?) digunakan untuk menghindari
+NullPointerException jika Activity dihancurkan sebelum MediaPlayer selesai
+diinisialisasi.

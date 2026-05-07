@@ -1,0 +1,33 @@
+LATIHAN GABUNGAN - APLIKASI MINIPLAYER
+Kembangkan aplikasi Android bernama MiniPlayer yang menggabungkan ketiga konsep
+multimedia di atas. Aplikasi ini memiliki tiga tab/menu utama:
+A. Spesifikasi Fungsional
+Fitur Komponen Kriteria Penerimaan
+Tab 1: Putar
+Lagu
+MediaPlayer + SeekBar Play/Pause/Stop berfungsi, SeekBar
+bergerak real-time, durasi tampil akurat
+Tab 2: Efek
+Suara
+SoundPool (min. 3 efek) Semua efek dapat diputar bersamaan tanpa
+jeda, tombol responsif
+Tab 3: Rekam
+Suara
+MediaRecorder +
+MediaPlayer
+Rekam, henti rekam, dan putar ulang
+berfungsi; permission ditangani
+Global Volume Control Volume slider memengaruhi semua mode
+pemutaran secara konsisten
+B. Panduan Pengerjaan
+1. Buat project baru di Android Studio dengan nama MiniPlayer, minimum SDK API
+26.
+2. Buat tiga Fragment: PlayerFragment, SoundFragment, dan RecorderFragment.
+3. Tambahkan BottomNavigationView untuk navigasi antar Fragment.
+4. Siapkan file audio di folder res/raw/ (minimal 1 lagu untuk tab 1, dan 3 efek suara
+untuk tab 2).
+5. Implementasikan masing-masing Fragment sesuai studi kasus di atas.
+6. Pastikan semua resource (MediaPlayer, SoundPool, MediaRecorder) di-release
+dengan benar di onDestroyView() atau onDestroy().
+7. Uji semua skenario: putar saat loading, putar simultan, rekam tanpa izin, rotasi layar
+(orientation change)
